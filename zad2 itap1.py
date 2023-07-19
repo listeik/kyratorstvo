@@ -1,0 +1,5 @@
+f=open('24.txt')
+s=f.readline()
+s=s.split('O')
+maxp=len(max(s,key=len))
+print(maxp//24,'<-сутки',maxp%24,'<-часы')
